@@ -61,18 +61,16 @@ class ProductosAPI {
     updateById(id, datosNuevos) {
         const exist = this.exists(id);
 
-        if (!exist) throw createError(404, ' El producto no existe , ingrese un id valido!');
-
-        this.validateBody(datosNuevos);
+        if (!exist) throw createError(404, ' El producto no existe , ingrese un id valido!')
 
         const indice = this.productos.findIndex(aProduct => aProduct.id == id);
         const oldProduct = this.productos[indice];
 
         const nuevoProducto = {
             id: oldProduct.id,
-            titulo: datosNuevos.titulo,
-            precio: datosNuevos.precio,
-            imagen: datosNuevos.imagen,
+            titulo: `${!datosNuevos.titulo ? oldProduct.titulo : datosNuevos.titulo}`,
+            precio: parseInt(!datosNuevos.precio ? oldProduct.precio : datosNuevos.precio),
+            imagen: `${!datosNuevos.imagen ? oldProduct.imagen : datosNuevos.imagen}`,
         }
         this.productos.splice(indice, 1, nuevoProducto);
 
