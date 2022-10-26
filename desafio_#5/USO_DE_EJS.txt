@@ -1,0 +1,3 @@
+Para el desafio #5 use "ejs", esto principalmente porque se me facilito entenderlo; ademas que la forma en que se ve aplicado a un documento HTML me parecio mas sencilla con la libreria de "EJS language support", esta libreria me ayudo mucho, principalemnte a la apertura y cierre de expresiones propias de ejs.
+
+Ademas de lo anterior tambien siento que es la mas sencilla de aplicar, ya que es muy similar al uso de React; donde tambien se podia incluir JavaScript al abrir y cerrar unas llaver dentro del HTML. En resumen, use ejs porque fue la mas sencilla de entender, tanto su sintaxis como la forma en la que se aplica para se usado con express.
