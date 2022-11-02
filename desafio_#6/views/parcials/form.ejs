@@ -1,0 +1,26 @@
+<section class="formularioDatos">
+    <h2 class="form-label titu backBlanc">Formulario para ingresar los datos</h2>
+    <div class="formData card">
+        <form method="POST" action='/api/productos' id="formProducts">
+            <div>
+                <label class="form-label" for="titulo">Titulo: *</label>
+                <input class="form-control" id="titulo" type="text" name="titulo" required>
+            </div>
+            <hr>
+            <div>
+                <label class="form-label" for="precio">Precio: *</label>
+                <input class="form-control" id="precio" type="number" name="precio" required>
+            </div>
+            <hr>
+            <div>
+                <label class="form-label" for="imagen">URL de la imagen: *</label>
+                <input class="form-control" id="imagen" type="url" name="imagen" required>
+            </div>
+            <br>
+            <div>
+                <input class="btn btn-success" type="submit" value="enviar">
+            </div>
+        </form>
+        <hr>
+    </div>
+</section>

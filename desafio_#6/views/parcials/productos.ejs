@@ -1,0 +1,30 @@
+<div class="titu backBlanc">
+    <h2>Lista de productos: </h2>
+</div>
+
+<% if (data.length===0) { %>
+    <h2 class="titu backBlanc">No hay productos para mostar</h2>
+    <% } else {%>
+        <div id="vistaProdu">
+            <% data.forEach(producto=> { %>
+                <div class="producto card">
+                    <hr>
+                    <div class="centrado">
+                        <p>
+                            <%= producto.titulo %>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="centrado">
+                        <p>
+                            <%= producto.precio %>
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="<%= producto.imagen %> " width="300px" alt="">
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+        <% } %>

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin: 3rem;
+}
+
+.titu {
+    text-align: center;
+    margin: 2rem;
+}
+
+.centrado {
+    text-align: center;
+}
+
+body {
+    background-image: url('https://img.freepik.com/vector-premium/fondo-vector-pixel-cuadricula-panal-hexagonal_42077-8358.jpg?w=2000');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.backBlanc {
+    background-color: rgba(245, 245, 245, 0.712);
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.chatVista {
+    background-color: rgba(245, 245, 245, 0.712);
+    padding: 1rem;
+    border-radius: 25px;
+    margin: 3rem;
+}
+
+.cahtViv {
+    background-color: white;
+    margin: 2rem;
+    border-radius: 30px;
+}
+
+.emailUser {
+    color: rgb(0, 153, 255);
+    font-size: 80%;
+}
+
+.horaa {
+    color: #804000;
+    font-size: 80%;
+}
+
+.mensajeFinalEnviado {
+    color: rgb(4, 168, 4);
+}
+
+.mensajeFinal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* pEmail.classList.add('emailUser');
+    pTime.classList.add('horaa');
+    pMessage.classList.add('mensajeFinalEnviado'); */
